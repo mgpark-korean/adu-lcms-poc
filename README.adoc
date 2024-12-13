@@ -1,0 +1,58 @@
+= adu-lcms-poc
+:toc: left
+:toclevels: 2
+
+== 소개
+이 프로젝트는 교육 도메인의 LCMS를 기반으로 하여 Spring Modulith, DDD, Hexagonal Architecture 등의 아키텍처 패턴등을 공부하기 위해서 만들어진 프로젝트입니다.
+
+== 기술 스택
+* Java 23
+* Spring Boot 3.4.0
+* Gradle 8.11.1
+
+== 프로젝트 구조
+
+```
+src/
+├── main/
+│   ├── java/
+│   │   └── com/
+│   │       └── adu/
+│   │           └── lcms/
+│   │               └── resource/
+│   │                   └── service/
+│   │                       ├── model/
+│   │                       │   ├── Resource.java
+│   │                       │   └── ResourceType.java
+│   │                       └── port/
+│   │                           └── in/
+│   │                               └── ResourceVerificationUseCase.java
+│   └── resources/
+└── test/
+```
+== 주요 클래스
+=== ResourceType
+리소스의 유형을 정의하는 열거형 클래스입니다.
+
+=== Resource
+리소스의 정보를 담고 있는 레코드 클래스입니다.
+
+=== ResourceVerificationUseCase
+리소스를 검증하는 유스케이스를 정의하는 인터페이스입니다.
+
+== 빌드 및 실행
+프로젝트를 빌드하고 실행하는 방법은 다음과 같습니다:
+
+```
+./gradlew build
+./gradlew bootRun
+```
+
+== 기여 방법
+프로젝트에 기여하려면 다음 절차를 따르세요:
+
+1. 이슈를 생성하여 버그를 보고하거나 기능을 제안합니다.
+2. 포크를 생성합니다.
+3. 새로운 브랜치를 만듭니다.
+4. 변경 사항을 커밋합니다.
+5. 풀 리퀘스트를 생성합니다.
