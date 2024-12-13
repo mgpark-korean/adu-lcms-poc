@@ -1,6 +1,6 @@
 package com.unicon.modulith.question.infra.repository;
 
-import com.unicon.modulith.question.domain.Question;
+import com.unicon.modulith.question.domain.QuestionEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -10,6 +10,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @version 1.0
  * @since 1.0
  */
-public interface QuestionRepository extends JpaRepository<Question, Long> {
+public interface QuestionRepository extends JpaRepository<QuestionEntity, Long> {
 
 }
